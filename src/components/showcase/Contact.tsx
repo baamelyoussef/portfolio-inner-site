@@ -1,6 +1,5 @@
-import React, { useEffect, useState, useCallback } from 'react';
+import React, { useEffect, useState } from 'react';
 import colors from '../../constants/colors';
-import twitterIcon from '../../assets/pictures/contact-twitter.png';
 import ghIcon from '../../assets/pictures/contact-gh.png';
 import inIcon from '../../assets/pictures/contact-in.png';
 import ResumeDownload from './ResumeDownload';
@@ -48,56 +47,21 @@ const Contact: React.FC<ContactProps> = (props) => {
         }
     }, [email, name, message]);
 
-    async function submitForm() {
+    function submitForm() {
         if (!isFormValid) {
             setFormMessage('Form unable to validate, please try again.');
             setFormMessageColor('red');
             return;
         }
-        try {
-            setIsLoading(true);
-            const res = await fetch(
-                'https://api.henryheffernan.com/api/contact',
-                {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({
-                        company,
-                        email,
-                        name,
-                        message,
-                    }),
-                }
-            );
-            // the response will be either {success: true} or {success: false, error: message}
-            const data = (await res.json()) as
-                | {
-                      success: false;
-                      error: string;
-                  }
-                | { success: true };
-            if (data.success) {
-                setFormMessage(`Message successfully sent. Thank you ${name}!`);
-                setCompany('');
-                setEmail('');
-                setName('');
-                setMessage('');
-                setFormMessageColor(colors.blue);
-                setIsLoading(false);
-            } else {
-                setFormMessage(data.error);
-                setFormMessageColor(colors.red);
-                setIsLoading(false);
-            }
-        } catch (e) {
-            setFormMessage(
-                'There was an error sending your message. Please try again.'
-            );
-            setFormMessageColor(colors.red);
-            setIsLoading(false);
-        }
+        const subject = encodeURIComponent(`Portfolio contact from ${name}${company ? ` (${company})` : ''}`);
+        const body = encodeURIComponent(`From: ${name}\nEmail: ${email}${company ? `\nCompany: ${company}` : ''}\n\n${message}`);
+        window.open(`mailto:hi@youssefbaamel.com?subject=${subject}&body=${body}`);
+        setFormMessage(`Thank you ${name}! Your email client should open now.`);
+        setFormMessageColor(colors.blue);
+        setCompany('');
+        setEmail('');
+        setName('');
+        setMessage('');
     }
 
     useEffect(() => {

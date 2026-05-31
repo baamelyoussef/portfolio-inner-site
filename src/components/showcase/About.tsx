@@ -93,11 +93,5 @@ const About: React.FC<AboutProps> = (props) => {
     );
 };
 
-const styles: StyleSheetCSS = {
-    image: {
-        height: 'auto',
-        width: '100%',
-    },
-};
 
 export default About;
