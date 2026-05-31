@@ -35,7 +35,7 @@ const Contact: React.FC<ContactProps> = (props) => {
     const [name, setName] = useState('');
     const [message, setMessage] = useState('');
     const [isFormValid, setIsFormValid] = useState(false);
-    const [isLoading, setIsLoading] = useState(false);
+    const [isLoading] = useState(false);
     const [formMessage, setFormMessage] = useState('');
     const [formMessageColor, setFormMessageColor] = useState('');
 
