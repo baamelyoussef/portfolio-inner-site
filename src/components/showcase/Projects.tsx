@@ -1,154 +1,66 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router';
-import software from '../../assets/pictures/projects/software.gif';
-import art from '../../assets/pictures/projects/art.gif';
-import music from '../../assets/pictures/projects/music.gif';
+import React from 'react';
 
 export interface ProjectsProps {}
-
-interface ProjectBoxProps {
-    icon: string;
-    title: string;
-    subtitle: string;
-    route: string;
-    iconStyle: React.CSSProperties;
-}
-
-const ProjectBox: React.FC<ProjectBoxProps> = ({
-    icon,
-    title,
-    subtitle,
-    route,
-    iconStyle,
-}) => {
-    const [, setIsHovering] = useState(false);
-    const navigation = useNavigate();
-
-    const handleClick = () => {
-        navigation(`/projects/${route}`);
-    };
-
-    const onMouseEnter = () => {
-        setIsHovering(true);
-    };
-
-    const onMouseLeave = () => {
-        setIsHovering(false);
-    };
-
-    return (
-        <div
-            onMouseDown={handleClick}
-            className="big-button-container"
-            style={styles.projectLink}
-            onMouseEnter={onMouseEnter}
-            onMouseLeave={onMouseLeave}
-        >
-            <div style={styles.projectLinkLeft}>
-                <img
-                    src={icon}
-                    style={Object.assign(
-                        {},
-                        styles.projectLinkImage,
-                        iconStyle
-                    )}
-                    alt=""
-                />
-                <div style={styles.projectText}>
-                    <h1 style={{ fontSize: 48 }}>{title}</h1>
-                    <h3>{subtitle}</h3>
-                </div>
-            </div>
-            <div style={styles.projectLinkRight}></div>
-        </div>
-    );
-};
 
 const Projects: React.FC<ProjectsProps> = (props) => {
     return (
         <div className="site-page-content">
             <h1>Projects</h1>
-            <h3>& Hobbies</h3>
             <br />
-            <p>
-                Click on one of the areas below to check out some of my favorite
-                projects I've done in that field. I spent a lot of time to
-                include a lot of visuals and interactive media to showcase each
-                project. Enjoy!
-            </p>
-            <br />
-            <div style={styles.projectLinksContainer}>
-                <ProjectBox
-                    icon={software}
-                    iconStyle={styles.computerIcon}
-                    title="Software"
-                    subtitle="PROJECTS"
-                    route="software"
-                />
-                <ProjectBox
-                    icon={music}
-                    iconStyle={styles.musicIcon}
-                    title="Music"
-                    subtitle="VENTURES"
-                    route="music"
-                />
-                <ProjectBox
-                    icon={art}
-                    iconStyle={styles.artIcon}
-                    title="Art"
-                    subtitle="ENDEAVORS"
-                    route="art"
-                />
+            <div className="text-block">
+                <h3>OkyNewsletters — Email Drag & Drop Builder</h3>
+                <br />
+                <p>
+                    Built during my internship at Oky Solutions, this tool
+                    allows marketers to design and export HTML email campaigns
+                    using a drag-and-drop interface. Built with Laravel and Sass,
+                    it significantly reduced the time needed to create branded
+                    email templates.
+                </p>
+            </div>
+            <div className="text-block">
+                <h3>BlinkPharma.ma — Pharma Digital Platform</h3>
+                <br />
+                <p>
+                    Enhanced digital tools and streamlined operations for
+                    blinkpharma.ma while at 1450 Factory. Built with Next.js and
+                    Supabase, the platform serves the pharmaceutical sector with
+                    tailored solutions for managing and distributing products
+                    across Morocco.
+                </p>
+            </div>
+            <div className="text-block">
+                <h3>Supratours & ONCF Voyages — E-commerce</h3>
+                <br />
+                <p>
+                    Worked on the Supratours Marketplace and ONCF Voyages
+                    e-commerce websites at Algo Consulting Group, improving the
+                    booking and purchasing experience for thousands of users
+                    using React.js and Node.js within an Agile Scrum team.
+                </p>
+            </div>
+            <div className="text-block">
+                <h3>Medical Application — MEDIOT</h3>
+                <br />
+                <p>
+                    Developed a React.js and Node.js application for the medical
+                    industry at MEDIOT, implementing solutions that meet
+                    healthcare industry standards. Leveraged cloud services for
+                    deployment and management.
+                </p>
+            </div>
+            <div className="text-block">
+                <h3>Freelance Projects</h3>
+                <br />
+                <p>
+                    Over two years of freelance work, I delivered full-stack and
+                    CMS-based web applications for clients across various
+                    industries — handling everything from requirements gathering
+                    to cloud deployment on AWS and Digital Ocean.
+                </p>
             </div>
         </div>
     );
-};
-
-const styles: StyleSheetCSS = {
-    projectLinksContainer: {
-        flexDirection: 'column',
-        width: '100%',
-        display: 'flex',
-        flex: 1,
-    },
-    projectLink: {
-        marginBottom: 24,
-        cursor: 'pointer',
-        width: '100%',
-        boxSizing: 'border-box',
-
-        alignItems: 'center',
-        justifyContent: 'space-between',
-    },
-    projectText: {
-        justifyContent: 'center',
-        flexDirection: 'column',
-    },
-    projectLinkImage: {
-        width: 48,
-        // height: 48,
-        marginRight: 38,
-    },
-    projectLinkLeft: {
-        marginLeft: 16,
-        alignItems: 'center',
-    },
-    computerIcon: {
-        width: 56,
-        height: 56,
-    },
-    musicIcon: {
-        width: 48,
-        height: 48,
-    },
-    arrowIcon: {
-        width: 48,
-        height: 48,
-    },
-    artIcon: {
-        width: 21 * 2,
-        height: 37 * 2,
-    },
 };
 
 export default Projects;
