@@ -6,10 +6,7 @@ export interface ExperienceProps {}
 const Experience: React.FC<ExperienceProps> = (props) => {
     return (
         <div className="site-page-content">
-            <div style={styles.pageHeader}>
-                <h1>Experience</h1>
-                <ResumeDownload />
-            </div>
+            <ResumeDownload />
             <div style={styles.headerContainer}>
                 <div style={styles.header}>
                     <div style={styles.headerRow}>
@@ -208,12 +205,6 @@ const Experience: React.FC<ExperienceProps> = (props) => {
 };
 
 const styles: StyleSheetCSS = {
-    pageHeader: {
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        width: '100%',
-        marginBottom: 16,
-    },
     header: {
         flexDirection: 'column',
         justifyContent: 'space-between',
