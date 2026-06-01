@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import colors from '../../constants/colors';
 import ghIcon from '../../assets/pictures/contact-gh.png';
 import inIcon from '../../assets/pictures/contact-in.png';
@@ -35,7 +35,7 @@ const Contact: React.FC<ContactProps> = (props) => {
     const [name, setName] = useState('');
     const [message, setMessage] = useState('');
     const [isFormValid, setIsFormValid] = useState(false);
-    const [isLoading] = useState(false);
+    const [isLoading, setIsLoading] = useState(false);
     const [formMessage, setFormMessage] = useState('');
     const [formMessageColor, setFormMessageColor] = useState('');
 
@@ -47,22 +47,38 @@ const Contact: React.FC<ContactProps> = (props) => {
         }
     }, [email, name, message]);
 
-    function submitForm() {
+    const submitForm = useCallback(async () => {
         if (!isFormValid) {
             setFormMessage('Form unable to validate, please try again.');
             setFormMessageColor('red');
             return;
         }
-        const subject = encodeURIComponent(`Portfolio contact from ${name}${company ? ` (${company})` : ''}`);
-        const body = encodeURIComponent(`From: ${name}\nEmail: ${email}${company ? `\nCompany: ${company}` : ''}\n\n${message}`);
-        window.open(`mailto:hi@youssefbaamel.com?subject=${subject}&body=${body}`);
-        setFormMessage(`Thank you ${name}! Your email client should open now.`);
-        setFormMessageColor(colors.blue);
-        setCompany('');
-        setEmail('');
-        setName('');
-        setMessage('');
-    }
+        try {
+            setIsLoading(true);
+            const res = await fetch('/api/contact', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ name, email, company, message }),
+            });
+            const data = await res.json() as { success: boolean; error?: string };
+            if (data.success) {
+                setFormMessage(`Message sent! Thank you ${name}.`);
+                setFormMessageColor(colors.blue);
+                setCompany('');
+                setEmail('');
+                setName('');
+                setMessage('');
+            } else {
+                setFormMessage(data.error || 'Something went wrong. Please try again.');
+                setFormMessageColor(colors.red);
+            }
+        } catch {
+            setFormMessage('There was an error sending your message. Please try again.');
+            setFormMessageColor(colors.red);
+        } finally {
+            setIsLoading(false);
+        }
+    }, [isFormValid, name, email, company, message]);
 
     useEffect(() => {
         if (formMessage.length > 0) {
