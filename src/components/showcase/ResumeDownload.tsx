@@ -26,10 +26,8 @@ const styles: StyleSheetCSS = {
         padding: 12,
         boxSizing: 'border-box',
         border: '2px solid black',
-        borderLeftWidth: 0,
-        borderRightWidth: 0,
-        width: '100%',
         alignItems: 'center',
+        flexShrink: 0,
     },
     resumeContainerText: {
         flexDirection: 'column',
