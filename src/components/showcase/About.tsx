@@ -12,11 +12,11 @@ const About: React.FC<AboutProps> = (props) => {
             <br />
             <div className="text-block">
                 <p>
-                    I'm a Software Engineer based in Casablanca, Morocco with 5
-                    years of experience specializing in the JavaScript stack. I
-                    progressed from Front End Engineer to Full Stack Developer to
-                    Software Engineer, building web and mobile applications for
-                    clients across diverse sectors.
+                    I'm a full-stack engineer with 5+ years building across
+                    React, Node.js, Python, and React Native — from SaaS
+                    products to real-time systems and production iOS apps.
+                    Currently based in France, working at BTECHNOLOGIE on
+                    client-facing applications for Bouygues Telecom.
                 </p>
                 <br />
                 <p>
@@ -51,12 +51,13 @@ const About: React.FC<AboutProps> = (props) => {
                 <br />
                 <p>
                     Over the years I've worked across freelance, startup, and
-                    agency environments — from building an email drag-and-drop
-                    builder at Oky Solutions, to enhancing e-commerce platforms
-                    at Algo Consulting Group, to delivering medical and
-                    pharmaceutical solutions at MEDIOT and 1450 Factory. I'm
-                    proficient with cloud services like AWS and Digital Ocean,
-                    and I thrive in Agile and Scrum teams.
+                    agency environments — enhancing national railway e-commerce
+                    platforms at Algo Consulting Group, delivering pharmaceutical
+                    solutions at 1450 Factory / Blink Pharma, and now building
+                    consumer applications at scale for Bouygues Telecom via
+                    BTECHNOLOGIE x Accenture. I'm proficient with cloud services
+                    like AWS and Digital Ocean, and I thrive in Agile and Scrum
+                    teams.
                 </p>
                 <br />
                 <p>
@@ -85,8 +86,9 @@ const About: React.FC<AboutProps> = (props) => {
                 <br />
                 <p>
                     React.js · Next.js · Vue.js · Nuxt.js · React Native ·
-                    TypeScript · Node.js · Laravel · TailwindCSS · CSS/SASS ·
-                    Firebase · Supabase · AWS · Digital Ocean
+                    TypeScript · Node.js · Python (Django) · Laravel ·
+                    TailwindCSS · CSS/SASS · Firebase · Supabase · AWS ·
+                    Digital Ocean
                 </p>
             </div>
         </div>

@@ -10,39 +10,74 @@ const Experience: React.FC<ExperienceProps> = (props) => {
             <div style={styles.headerContainer}>
                 <div style={styles.header}>
                     <div style={styles.headerRow}>
-                        <h1>1450 Factory</h1>
+                        <h1>BTECHNOLOGIE</h1>
                     </div>
                     <div style={styles.headerRow}>
-                        <h3>Software Engineer</h3>
+                        <h3>Front End Engineer · Bouygues Telecom x Accenture</h3>
                         <b>
-                            <p>Sep 2023 – Present</p>
+                            <p>Jan 2025 – Present</p>
                         </b>
                     </div>
                 </div>
             </div>
             <div className="text-block">
                 <p>
-                    Full-time software engineer working across web and mobile
-                    applications for clients in sectors including pharmaceuticals.
+                    Building client-facing web and mobile applications for
+                    Bouygues Telecom, one of France's major telecoms.
                 </p>
                 <br />
                 <ul>
                     <li>
                         <p>
+                            Developing with React, Next.js, and TypeScript for
+                            consumer-facing features and internal tools.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Managing a partials system driven by a Directus
+                            headless CMS for dynamic content delivery.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Using AWS for backend services and asset processing
+                            pipelines.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div style={styles.headerContainer}>
+                <div style={styles.header}>
+                    <div style={styles.headerRow}>
+                        <h1>1450 Factory · Blink Pharma</h1>
+                    </div>
+                    <div style={styles.headerRow}>
+                        <h3>Full Stack Engineer</h3>
+                        <b>
+                            <p>Sep 2023 – Sep 2024</p>
+                        </b>
+                    </div>
+                </div>
+            </div>
+            <div className="text-block">
+                <p>
+                    Full-stack engineer working across web and mobile
+                    applications for clients in the pharmaceutical sector.
+                </p>
+                <br />
+                <ul>
+                    <li>
+                        <p>
+                            Key role on blinkpharma.ma — built the original
+                            Python backend and contributed to the later migration
+                            to a Next.js fullstack architecture.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
                             Developed web and mobile applications using Next.js,
-                            React.js, React Native, and Supabase.
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            Worked with clients in various sectors, including
-                            pharmaceuticals, to create tailored digital solutions.
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            Enhanced digital tools and streamlined operations for
-                            blinkpharma.ma.
+                            React Native, and Supabase.
                         </p>
                     </li>
                     <li>
@@ -59,29 +94,29 @@ const Experience: React.FC<ExperienceProps> = (props) => {
                         <h1>MEDIOT</h1>
                     </div>
                     <div style={styles.headerRow}>
-                        <h3>Front End Engineer</h3>
+                        <h3>Full Stack Engineer</h3>
                         <b>
-                            <p>Apr 2023 – Sep 2023</p>
+                            <p>Jun 2023 – Sep 2023</p>
                         </b>
                     </div>
                 </div>
             </div>
             <div className="text-block">
                 <p>
-                    Front-end engineer focused on building medical solutions using
-                    modern JavaScript technologies.
+                    Full-stack development of medical-sector applications in an
+                    Agile environment.
                 </p>
                 <br />
                 <ul>
                     <li>
                         <p>
-                            Developed applications using React.js and Node.js in
-                            an Agile environment.
+                            Developed and delivered features end to end using
+                            React.js and Node.js.
                         </p>
                     </li>
                     <li>
                         <p>
-                            Implemented medical solutions to meet industry
+                            Implemented solutions meeting healthcare industry
                             standards and patient needs.
                         </p>
                     </li>
@@ -96,10 +131,10 @@ const Experience: React.FC<ExperienceProps> = (props) => {
             <div style={styles.headerContainer}>
                 <div style={styles.header}>
                     <div style={styles.headerRow}>
-                        <h1>Algo Consulting Group</h1>
+                        <h1>Algo Consulting Group · ONCF</h1>
                     </div>
                     <div style={styles.headerRow}>
-                        <h3>Front End Engineer</h3>
+                        <h3>Full Stack Engineer</h3>
                         <b>
                             <p>Jan 2022 – Mar 2023</p>
                         </b>
@@ -108,15 +143,21 @@ const Experience: React.FC<ExperienceProps> = (props) => {
             </div>
             <div className="text-block">
                 <p>
-                    Front-end engineer enhancing large-scale e-commerce and
-                    transport platforms in Morocco.
+                    Full-stack development for ONCF, Morocco's national railway,
+                    enhancing large-scale e-commerce and transport platforms.
                 </p>
                 <br />
                 <ul>
                     <li>
                         <p>
-                            Enhanced Supratours Marketplace and ONCF Voyages
-                            e-commerce websites using React.js and Node.js.
+                            Enhanced the Supratours and ONCF Voyages train-ticket
+                            platforms using React.js and Node.js.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Added RTL Arabic localization and advised on UX for
+                            the merchant site redesign.
                         </p>
                     </li>
                     <li>
@@ -135,7 +176,7 @@ const Experience: React.FC<ExperienceProps> = (props) => {
                     <div style={styles.headerRow}>
                         <h3>Full Stack Developer</h3>
                         <b>
-                            <p>Jan 2020 – Dec 2021</p>
+                            <p>Feb 2020 – Dec 2021</p>
                         </b>
                     </div>
                 </div>
@@ -149,53 +190,20 @@ const Experience: React.FC<ExperienceProps> = (props) => {
                 <ul>
                     <li>
                         <p>
-                            Collaborated with clients to establish project goals,
-                            projections, and milestones.
+                            Delivered projects using Python (Django), Node.js,
+                            React.js, and Vue.js.
                         </p>
                     </li>
                     <li>
                         <p>
                             Managed front-end to full-stack and CMS development to
-                            meet deadlines and organizational expectations.
+                            meet deadlines and client expectations.
                         </p>
                     </li>
                     <li>
                         <p>
                             Deployed applications on cloud platforms, ensuring
                             scalability and reliability.
-                        </p>
-                    </li>
-                </ul>
-            </div>
-            <div style={styles.headerContainer}>
-                <div style={styles.header}>
-                    <div style={styles.headerRow}>
-                        <h1>Oky Solutions</h1>
-                    </div>
-                    <div style={styles.headerRow}>
-                        <h3>Full Stack Developer — Internship</h3>
-                        <b>
-                            <p>Oct 2019 – Jan 2020</p>
-                        </b>
-                    </div>
-                </div>
-            </div>
-            <div className="text-block">
-                <p>
-                    Internship building internal tooling for email marketing.
-                </p>
-                <br />
-                <ul>
-                    <li>
-                        <p>
-                            Developed the OkyNewsletters Email Drag & Drop Builder
-                            using Laravel and Sass.
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            Streamlined email design creation with a user-friendly
-                            drag-and-drop interface.
                         </p>
                     </li>
                 </ul>
