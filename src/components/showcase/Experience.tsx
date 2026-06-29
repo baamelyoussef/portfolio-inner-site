@@ -23,14 +23,15 @@ const Experience: React.FC<ExperienceProps> = (props) => {
             <div className="text-block">
                 <p>
                     Building client-facing web and mobile applications for
-                    Bouygues Telecom, one of France's major telecoms.
+                    Bouygues Telecom, one of France's top three telecoms —
+                    platforms serving 15.8M quarterly visitors (SimilarWeb verified).
                 </p>
                 <br />
                 <ul>
                     <li>
                         <p>
                             Developing with React, Next.js, and TypeScript for
-                            consumer-facing features and internal tools.
+                            consumer-facing features and internal tools at scale.
                         </p>
                     </li>
                     <li>
@@ -103,27 +104,30 @@ const Experience: React.FC<ExperienceProps> = (props) => {
             </div>
             <div className="text-block">
                 <p>
-                    Full-stack development of medical-sector applications in an
-                    Agile environment.
+                    Built a telemedicine platform connecting patients with
+                    specialists remotely — one of my most impactful projects,
+                    especially during the 2023 Marrakesh earthquake when it
+                    helped deliver care to people in disrupted areas.
                 </p>
                 <br />
                 <ul>
                     <li>
                         <p>
-                            Developed and delivered features end to end using
-                            React.js and Node.js.
+                            Platform facilitated over 1 million medical
+                            interventions and 200,000+ tele-expertises conducted
+                            with specialists.
                         </p>
                     </li>
                     <li>
                         <p>
-                            Implemented solutions meeting healthcare industry
-                            standards and patient needs.
+                            Integrated AI-native medical devices to support
+                            remote diagnostics and patient monitoring.
                         </p>
                     </li>
                     <li>
                         <p>
-                            Leveraged cloud services for efficient application
-                            deployment and management.
+                            Delivered end-to-end features using React.js and
+                            Node.js in an Agile healthcare environment.
                         </p>
                     </li>
                 </ul>
@@ -143,8 +147,9 @@ const Experience: React.FC<ExperienceProps> = (props) => {
             </div>
             <div className="text-block">
                 <p>
-                    Full-stack development for ONCF, Morocco's national railway,
-                    enhancing large-scale e-commerce and transport platforms.
+                    Consultant on Morocco's national railway e-commerce platforms,
+                    working on high-traffic public infrastructure used by millions
+                    of travelers.
                 </p>
                 <br />
                 <ul>
@@ -156,14 +161,15 @@ const Experience: React.FC<ExperienceProps> = (props) => {
                     </li>
                     <li>
                         <p>
-                            Added RTL Arabic localization and advised on UX for
-                            the merchant site redesign.
+                            Sub-managed a team of junior engineers and interns,
+                            onboarding and guiding them through delivery — the
+                            team later took over the mission full-time.
                         </p>
                     </li>
                     <li>
                         <p>
-                            Worked within an Agile Scrum framework to meet client
-                            goals and ensure timely delivery.
+                            Added RTL Arabic localization and advised on UX for
+                            the merchant site redesign.
                         </p>
                     </li>
                 </ul>

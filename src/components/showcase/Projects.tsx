@@ -14,7 +14,8 @@ const Projects: React.FC<ProjectsProps> = (props) => {
                 </p>
                 <p>
                     A health and fitness iOS app built with React Native, live
-                    on the App Store.
+                    on the App Store. Rated 5.0 ★ — designed to help users
+                    track emotional recovery with AI-powered support and journaling.
                 </p>
                 <br />
                 <ul>
@@ -37,8 +38,10 @@ const Projects: React.FC<ProjectsProps> = (props) => {
                     <small>React Native · iOS · Medical · 2024</small>
                 </p>
                 <p>
-                    A medical iOS app built with React Native for the
-                    pharmaceutical sector, live on the App Store in Morocco.
+                    A medical iOS app built with React Native for the Moroccan
+                    pharmaceutical market, live on the App Store. Actively
+                    maintained across 25+ releases — serving pharmacies with
+                    marketplace access, medical data, and product management tools.
                 </p>
                 <br />
                 <ul>

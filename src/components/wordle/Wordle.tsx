@@ -232,6 +232,9 @@ const Wordle: React.FC<WordleProps> = () => {
     // listen to keyboard events
     useEffect(() => {
         const handleKeyDown = (event: KeyboardEvent) => {
+            const tag = document.activeElement?.tagName;
+            if (tag === 'INPUT' || tag === 'TEXTAREA') return;
+            if (!event.key) return;
             if (event.key === 'Backspace') {
                 setCurrentGuess(currentGuess.slice(0, -1));
             } else if (event.key === 'Enter') {

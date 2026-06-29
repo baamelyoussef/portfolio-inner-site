@@ -43,13 +43,6 @@ const About: React.FC<AboutProps> = (props) => {
                 </p>
                 <br />
                 <p>
-                    In 2020, I also completed the Front End Web Development
-                    Certification through the One Million Arab Coders Initiative
-                    by Udacity, deepening my expertise in HTML, CSS, JavaScript,
-                    and React.js.
-                </p>
-                <br />
-                <p>
                     Over the years I've worked across freelance, startup, and
                     agency environments — enhancing national railway e-commerce
                     platforms at Algo Consulting Group, delivering pharmaceutical
@@ -58,6 +51,16 @@ const About: React.FC<AboutProps> = (props) => {
                     BTECHNOLOGIE x Accenture. I'm proficient with cloud services
                     like AWS and Digital Ocean, and I thrive in Agile and Scrum
                     teams.
+                </p>
+                <br />
+                <p>
+                    One of my most meaningful projects was a telemedicine
+                    platform built to connect patients with doctors remotely.
+                    What makes it especially close to my heart is the real-world
+                    impact it had during the 2023 Marrakesh earthquake — one of
+                    Morocco's deadliest disasters in decades — helping people in
+                    remote and affected areas access medical care when physical
+                    infrastructure was disrupted.
                 </p>
                 <br />
                 <p>
@@ -74,21 +77,40 @@ const About: React.FC<AboutProps> = (props) => {
                     <br />
                     Hassan II University — Casablanca, Morocco
                 </p>
-                <br />
-                <p>
-                    <b>Front End Web Development Certification (2020)</b>
-                    <br />
-                    One Million Arab Coders Initiative by Udacity
-                </p>
             </div>
             <div className="text-block">
                 <h3>Technical Skills</h3>
                 <br />
+                <p><b>Frontend</b></p>
+                <p>React.js · Next.js · Vue.js · Nuxt.js · React Native · TypeScript</p>
+                <br />
+                <p><b>Backend</b></p>
+                <p>Node.js · Express.js · Python (Django) · FastAPI · Laravel · REST APIs</p>
+                <br />
+                <p><b>Styling & Design</b></p>
+                <p>TailwindCSS · CSS / SASS · Figma</p>
+                <br />
+                <p><b>Cloud & DevOps</b></p>
+                <p>AWS · Digital Ocean · Vercel · Docker · Kubernetes · Terraform · CI/CD · Git / GitHub</p>
+                <br />
+                <p><b>Testing</b></p>
+                <p>Jest</p>
+                <br />
+                <p><b>Databases & BaaS</b></p>
+                <p>PostgreSQL · MySQL · Microsoft SQL Server · MongoDB · GraphQL · Firebase · Supabase · Drizzle</p>
+                <br />
+                <p><b>AI & Machine Learning</b></p>
+                <p>OpenAI API · LangChain · Hugging Face · Pinecone · RAG · LLM Integration · Prompt Engineering · AI Agents</p>
+            </div>
+            <div className="text-block">
+                <h3>Languages</h3>
+                <br />
                 <p>
-                    React.js · Next.js · Vue.js · Nuxt.js · React Native ·
-                    TypeScript · Node.js · Python (Django) · Laravel ·
-                    TailwindCSS · CSS/SASS · Firebase · Supabase · AWS ·
-                    Digital Ocean
+                    <b>Arabic</b> — Native &nbsp;·&nbsp;{' '}
+                    <b>French</b> — Fluent &nbsp;·&nbsp;{' '}
+                    <b>English</b> — Fluent &nbsp;·&nbsp;{' '}
+                    <b>Spanish</b> — Beginner &nbsp;·&nbsp;{' '}
+                    <b>German</b> — Beginner
                 </p>
             </div>
         </div>
