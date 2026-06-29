@@ -20,9 +20,9 @@ const Hobbies: React.FC<HobbiesProps> = (props) => {
                 </p>
                 <br />
                 <div style={styles.travelPhotos}>
-                    <img src={travel1} style={styles.travelPhoto} alt="Travel photo 1" />
-                    <img src={travel2} style={styles.travelPhoto} alt="Travel photo 2" />
-                    <img src={travel3} style={styles.travelPhoto} alt="Travel photo 3" />
+                    <img src={travel1} style={styles.travelPhoto} alt="Destination 1" />
+                    <img src={travel2} style={styles.travelPhoto} alt="Destination 2" />
+                    <img src={travel3} style={styles.travelPhoto} alt="Destination 3" />
                 </div>
             </div>
             <div className="text-block">
